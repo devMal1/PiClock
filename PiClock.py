@@ -1,4 +1,4 @@
-import models.Clock, ui.DigitalClockView
+import Clock, ui.DigitalClockView
 import pygame, sys
 from pygame.locals import *
 
@@ -14,7 +14,7 @@ def main():
     DISPLAYSURF = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
     pygame.display.set_caption('PiClock')
 
-    sysClock = models.Clock.Clock()
+    sysClock = Clock.Clock()
     clockView = ui.DigitalClockView.DigitalClockView(sysClock, DISPLAYSURF)
     
     while True: #game loop
